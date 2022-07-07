@@ -2,11 +2,15 @@
 <html lang="en">
 
 {% include head.html %}
+<!-- body is a flexbox container -->
 <body>
   {% include header.html %}
   
-  {{ content }}
-  
+  <!-- content-container is a flexbox item -->
+  <div class="content-container">
+    {{ content }}
+  </div>
+
   {% include footer.html %}
 </body>
 
